@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diane">
+    <!-- <link rel="stylesheet" href="style/root.css"> -->
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+  </head>
+
+  <body>
+    <style>
+        a:hover {
+            cursor: pointer;
+        }
+    </style>
+    <div id="container">
+        <h1><%= title %></h1>
+        <h2><a id="login"><%= subtitle1 %></a></h2>
+        <h2><a id="sign-in"><%= subtitle2 %></a></h2>
+    </div>
+
+    <!-- Erreur de type MIME pour le content-type du fichier JS => pas trouvé de soluce
+    => peux pas importer de fichier .js -->
+    <script>
+        /**
+         * EVENT LISTENERS
+         */
+        // clic des liens
+        login.addEventListener('click', () => {
+            // on renvoie vers la route /login
+            window.location.href= '/login';
+        });
+        document.getElementById('sign-in').addEventListener('click', () => {
+            // on renvoie vers la route /sign-in
+            window.location.href= '/sign_in';
+        });
+    </script>
+  </body>
+</html>
