@@ -36,7 +36,7 @@ router.get('/sign_in', (req, res) => {
     res.render('sign_in', {
         'title': "Inscription"
     });
-}); // fin GET /login
+}); // fin GET /sign_in
 
 
 /**
