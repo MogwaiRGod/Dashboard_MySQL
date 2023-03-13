@@ -19,9 +19,26 @@
 
         <div id="container">
             <h1><%= title %></h1>
-            <h2><a id="connect"><%= subtitle1 %></a></h2>
+            <!-- Formulaire de connexion utilisateur -->
+            <form id="formUser" method="POST" action="/welcome">
+                <input type="text" id="userLogin" value="Pedro" required>
+                <input type="password" id="userPw" value="lololol" required>
+                <button><%= button %></button>
+            </form>
+
             <h2><a id="welcome"><%= subtitle2 %></a></h2>
+            <h2><a id="sign-in"><%= subtitle3 %></a></h2>
         </div>
 
+        <script>
+            // document.getElementById('formUser').addEventListener('click', (e) => {
+            //     // on empêche l'envoi direct à la route spécifiée dans action
+            //     e.preventDefault();
+            //     // requête fetch pour envoyer les données entrées par l'utilisateur
+            //     fetch("/welcome")
+            //     .then(res => res.)
+            //     console.log("oui")
+            // }); // fin event listener form user
+        </script>
     <body>
 </html>
